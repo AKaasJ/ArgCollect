@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!-- get welcome popup using razor? -->
+
+<h3>@ViewData["Message"]</h3>
+<p>@ViewData["Statement"]</p>
+<div id="buttonsDiv">
+    <button id="agreeButton">I agree </button> <button id="disagreeButton">I disagree</button>
+</div>
+
+<div id="argumentDiv">
+    <p>@ViewData["Argument"]</p>
+    <form method="post">
+        <textarea id="primerArea" name="primerAreaText">her er en primer</textarea><br />
+        <input type="submit" />
+    </form>
+</div>
